@@ -1,0 +1,605 @@
+/**
+ * 1. Popup header
+ * 2. Popup content screen start 
+ * 3. Popup content term & condition 
+ * 4. Popup content user's options screen
+ *    4.1. Popup tab pane choose product type
+ *    4.2. Popup tab pane details 
+ *    4.3. Popup tab pane results 
+ * 5. Popup footer   
+ * 6. Customize scrollbar   
+ *   
+ */
+
+/*=============================================
+=            1. Popup Header           =
+=============================================*/
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  background: url("/src/images/global/background.png") no-repeat center/cover;
+  text-align: center;
+}
+.btn-prev {
+  display: none;
+  @include setPosition(absolute, 3.2rem, null, null, 2.4rem);
+  max-width: 2rem;
+  cursor: pointer;
+}
+.popup__header {
+  .logo {
+    margin: 0 auto;
+    max-width: 16rem;
+    @include breakpoint-down(small) {
+      max-width: 13rem;
+    }
+  }
+}
+
+/*=============================================
+=            2. Popup content screen start          =
+=============================================*/
+
+.popup__body {
+  display: none;
+  @include breakpoint-down(small) {
+    margin-top: 3.2rem;
+  }
+  &.active {
+    display: block;
+  }
+  .heading {
+    margin-top: 3.2rem;
+    margin-bottom: 2.4rem;
+    font-weight: 400;
+    font-size: $font-xlg;
+    color: $mainColor;
+    @include breakpoint-down(small) {
+      font-size: 2.4rem;
+    }
+  }
+}
+.popup__body-screen-start {
+  .hero {
+    max-width: 44rem;
+    margin: auto;
+    margin-bottom: 2.4rem;
+  }
+  .desc {
+    max-width: 38.6rem;
+    margin: 0 auto 2.4rem;
+    color: $textColor;
+  }
+
+  span {
+    margin-left: 0.4rem;
+    color: $mainColor;
+    cursor: pointer;
+  }
+}
+.read-term {
+  text-align: left;
+  margin-bottom: 2.4rem;
+  @include breakpoint-down(small) {
+    font-size: $font-sm;
+  }
+  .checkbox-term {
+    appearance: none;
+    position: relative;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    border: 1px solid rgba(137, 137, 137, 0.5);
+    border-radius: 0;
+    background-color: $whiteColor;
+    cursor: pointer;
+  }
+
+  .checkbox-term::after {
+    display: none;
+    content: url("/src/images/icons/checkbox.svg");
+    @include setPosition(absolute, null, null, -1px, 0);
+  }
+
+  .checkbox-term:checked::after {
+    display: block;
+  }
+}
+
+/*=============================================
+=            3. Popup content term & condition            =
+=============================================*/
+
+.popup__body-term {
+  height: 43rem;
+  margin-top: 6rem;
+  margin-bottom: 2.4rem;
+  background-color: $whiteColor;
+  border-radius: 4px;
+  @include breakpoint-down(small) {
+    margin-top: 5.1rem;
+  }
+  .term-content {
+    max-height: 40rem;
+    padding: 0 4rem;
+    text-align: left;
+    overflow-y: auto;
+    @include breakpoint-down(small) {
+      padding: 0 1.7rem;
+    }
+    .heading {
+      margin: 0.6rem 0 0;
+      text-align: center;
+      @include breakpoint-down(small) {
+        margin: 0.9rem 0 0;
+      }
+    }
+    .term-title {
+      @include setFont(neobd);
+      font-size: $font-lg;
+      color: $textColorDark;
+      margin-top: 3.2rem;
+      margin-bottom: 0.8rem;
+      @include breakpoint-down(small) {
+        margin-top: 2.4rem;
+        font-size: $font-med;
+      }
+    }
+    .term-desc {
+      line-height: 2.2rem;
+      @include breakpoint-down(small) {
+        font-size: $font-sm;
+      }
+    }
+  }
+
+  .read-term {
+    position: relative;
+    height: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.6rem 4rem 0.9rem 4rem;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    @include breakpoint-down(small) {
+      padding: 0.6rem 1.7rem 0.9rem 1.7rem;
+    }
+    &::before {
+      content: "";
+      @include setPosition(absolute, -1.2rem, 0, null, 0);
+      height: 1rem;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        $whiteColor 100%
+      );
+    }
+  }
+}
+
+/*=============================================
+=            4. Popup user's options screen            =
+=============================================*/
+
+/*----------  4.1. Popup tab pane choose product type  ----------*/
+.popup__tab-pane {
+  display: none;
+  margin: 0 auto;
+  &.active {
+    display: block;
+  }
+}
+.popup__tab-pane-choose {
+  max-width: 58rem;
+  margin-bottom: 4rem;
+  @include breakpoint-down(small) {
+    margin-bottom: 5.4rem;
+  }
+  .type__list {
+    margin-top: 3.2rem;
+    @include breakpoint-down(small) {
+      display: block;
+    }
+  }
+  .type__item {
+    width: 18rem;
+    height: 18rem;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(0, 65, 192, 0.2);
+    border-radius: 20px;
+    color: $mainColor;
+    text-align: center;
+    cursor: pointer;
+    &.active {
+      background-color: $green;
+      color: $whiteColor;
+    }
+    &.active .type__logo {
+      filter: invert(1) brightness(100);
+    }
+    &:not(:last-child) {
+      margin-right: 2rem;
+      @include breakpoint-down(small) {
+        margin-right: auto;
+        margin-bottom: 1.6rem;
+      }
+    }
+    @include breakpoint-down(small) {
+      display: flex;
+      align-items: center;
+      min-width: 30.9rem;
+      max-height: 8.8rem;
+      padding: 1.7rem 4rem;
+      margin: auto;
+    }
+  }
+  .type__logo {
+    max-width: 7.2rem;
+    margin: 3.2rem auto 1.6rem;
+    @include breakpoint-down(small) {
+      max-width: 5.4rem;
+      margin: 0;
+    }
+  }
+  .type__desc {
+    width: 17.1rem;
+    min-height: 4rem;
+    margin: 0 0.4rem;
+  }
+}
+.popup__tabs {
+  max-width: 37rem;
+  height: 2rem;
+  margin: 2.4rem auto 4rem;
+}
+.popup__tab-item:not(:last-child) {
+  margin-right: auto;
+}
+.popup__tab-item {
+  position: relative;
+  min-width: 11rem;
+  font-size: $font-sm;
+  text-align: center;
+  color: $darkBlueOpacity;
+  &.active {
+    color: $mainColor;
+    &::after {
+      background-color: $mainColor;
+    }
+  }
+  &::after {
+    content: "";
+    @include setPosition(absolute, null, 0, -0.4rem, 0);
+    height: 0.2rem;
+    background-color: $darkBlueOpacity;
+  }
+}
+
+/*----------  4.2. Popup tab pane details  ----------*/
+
+.popup__tab-pane-details {
+  max-width: 37rem;
+  margin-bottom: 4rem;
+  @include breakpoint-down(small) {
+    padding: 0 0.8rem;
+    margin-bottom: 5.4rem;
+  }
+}
+
+.question {
+  margin-top: 4rem;
+  @include breakpoint-down(small) {
+    margin-top: 2.4rem;
+  }
+  &:nth-child(3) {
+    @include breakpoint-down(small) {
+      margin-top: 3.2rem;
+    }
+    .question__content {
+      @include breakpoint-down(small) {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+  &__content {
+    margin-bottom: 2.4rem;
+    @include breakpoint-down(small) {
+      margin-bottom: 1.6rem;
+    }
+  }
+  &__button {
+    button.active {
+      background-color: $green;
+      color: $whiteColor;
+    }
+    button.btn--border {
+      min-width: 17.5rem;
+      height: 4.2rem;
+      @include breakpoint-down(small) {
+        min-width: 14.7rem;
+        height: 4.8rem;
+      }
+    }
+  }
+  span {
+    @include setFont(neobd);
+  }
+}
+
+.size-width,
+.size-length {
+  text-align: start;
+  span {
+    @include setFont(neobd);
+  }
+}
+.size-length {
+  margin-top: 4rem;
+  @include breakpoint-down(small) {
+    margin-top: 3.2rem;
+  }
+}
+.size-range {
+  margin-top: 2.4rem;
+  @include breakpoint-down(small) {
+    margin-top: 2.4rem;
+  }
+  .slider {
+    appearance: none;
+    position: relative;
+    flex: 1;
+    height: 0.2rem;
+    margin: 0 1.6rem;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+  }
+  .slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: $whiteColor;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+
+  .slider::-moz-range-thumb {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: $whiteColor;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+}
+
+/*----------  4.3. Popup tab pane results  ----------*/
+.error {
+  display: none;
+  max-width: 40rem;
+  margin: auto;
+  font-size: $font-lg;
+  line-height: 2.2;
+  a {
+    color: $mainColor;
+  }
+}
+.popup__product {
+  max-width: 77.6rem;
+  margin: 0 auto;
+  @include breakpoint-down(small) {
+    flex-direction: column;
+    align-items: center;
+    max-width: 31.1rem;
+  }
+  &-content {
+    max-width: 30.9rem;
+    margin-right: 2.4rem;
+    @include breakpoint-down(small) {
+      margin-right: 0;
+    }
+  }
+
+  &-name {
+    margin-bottom: 1.6rem;
+    line-height: 1.5;
+    b {
+      @include setFont(neobd);
+      line-height: 1.5;
+    }
+  }
+  &-sku {
+    color: rgba(0, 58, 159, 0.5);
+  }
+  &-image {
+    margin: 0.8rem auto 2.4rem;
+  }
+  .button-group {
+    button {
+      min-width: 20.2rem;
+      margin-bottom: 1.6rem;
+      @include breakpoint-down(small) {
+        height: 4rem;
+        min-width: 15.1rem;
+      }
+    }
+    @include breakpoint-down(small) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &-desc {
+    position: relative;
+    height: 40rem;
+    background: $whiteColor;
+    border: 0.5px solid #e1e1e1;
+    border-radius: 16px;
+    @include breakpoint-down(small) {
+      height: 30rem;
+    }
+    &::after {
+      content: "";
+      @include setPosition(absolute, null, 2.4rem, 0, 2.4rem);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        $whiteColor 100%
+      );
+      height: 1.4rem;
+    }
+  }
+  &-tabs {
+    position: relative;
+    height: 4rem;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  &-tab-item {
+    position: relative;
+    width: 50%;
+    cursor: pointer;
+    text-align: center;
+    padding: 1.4rem 0 1rem;
+    color: rgba(0, 58, 159, 0.3);
+    &.active {
+      color: $mainColor;
+    }
+  }
+  .line {
+    @include setPosition(absolute, null, null, -1px, 0);
+    width: 50%;
+    height: 2px;
+    border-radius: 2rem;
+    background-color: $mainColor;
+    transition: all 0.2s ease;
+  }
+  .popup__product-tab-pane {
+    display: none;
+    max-height: 36rem;
+    overflow-y: auto;
+    @include breakpoint-down(small) {
+      max-height: 26rem;
+    }
+    &.active {
+      display: block;
+    }
+  }
+  .benefit-list {
+    text-align: left;
+    line-height: 1.6;
+    padding: 0 2.6rem 0 3.9rem;
+    margin: 2.1rem 0 3.1rem;
+    @include breakpoint-down(small) {
+      font-size: $font-sm;
+      line-height: 2.2rem;
+    }
+  }
+  .benefit-list li {
+    text-indent: -0.68rem;
+  }
+
+  .benefit-list li::before {
+    content: "\2022";
+    color: $darkBlue;
+    font-weight: bold;
+    display: inline-block;
+    width: 0.68rem;
+  }
+
+  .spec__list {
+    padding: 2.4rem 2.4rem 0;
+  }
+  .spec__item {
+    font-family: Arial;
+    font-size: $font-med;
+    font-weight: 400;
+    margin-bottom: 2.4rem;
+    line-height: 2.4rem;
+    text-align: left;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    & p {
+      padding: 0 0.8rem;
+    }
+    &:nth-of-type(2n + 1) {
+      background-color: rgba(196, 196, 196, 0.2);
+    }
+  }
+  .spec__item-name {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+  }
+}
+/*=============================================
+=            5.Popup footer            =
+=============================================*/
+.btn-start-over {
+  cursor: pointer;
+  color: $mainColor;
+  font-size: $font-sm;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.btn-so-mobile {
+  display: none;
+  margin-left: auto;
+}
+.btn-so-mobile.show-for-mobile {
+  @include breakpoint-down(small) {
+    display: block;
+  }
+}
+.btn-next {
+  margin: auto;
+  width: 18rem;
+  @include breakpoint-down(small) {
+    min-width: 28rem;
+  }
+}
+.popup__footer {
+  align-items: baseline;
+  @include breakpoint-down(small) {
+    max-width: 31.1rem;
+    margin: 0 auto;
+  }
+  .legal {
+    margin-top: 2.4rem;
+    cursor: pointer;
+    color: $mainColor;
+    text-align: left;
+  }
+}
+
+/*=============================================
+=            6.Customize scrollbar            =
+=============================================*/
+
+/* width */
+.term-content,
+.popup__product-tab-pane {
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+}
+
+/* Track */
+.term-content,
+.popup__product-tab-pane {
+  &::-webkit-scrollbar-track {
+    margin: 1rem 0 2rem;
+  }
+}
+
+/* Handle */
+.term-content,
+.popup__product-tab-pane {
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+  }
+}

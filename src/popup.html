@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panasonic Popups</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="btn-prev">
+            <img src="./images/icons/Back.svg" alt="">
+        </div>
+        <!-- BEGIN POPUP HEADER -->
+        <header class="popup__header">
+            <img src="./images/global/logo.svg" alt="" class="logo">
+        </header>
+        <!-- END POPUP HEADER -->
+
+        <div class="container">
+            <!-- BEGIN POPUP BODY SCREEN-START -->
+            <div class="popup__body popup__body-screen-start">
+                <h2 class="heading">Air Conditioning Sizing Wizard</h2>
+                <img src="./images/global/hero.svg" alt="" class="hero">
+                <p class="desc">Use this wizard to size your room and find out which products meet your needs.</p>
+                <div class="read-term flex flex-ai-c flex-jc-c">
+                    <label class="flex flex-ai-c checkbox-content">
+                        <input type="checkbox" name="" id="check" class="checkbox-term">
+                        I have read and accept the
+                    </label>
+                    <span class="term">Terms & Conditions</span>
+                </div>
+            </div>
+            <!-- END POPUP SCREEN-START  -->
+
+            <!-- BEGIN POPUP BODY USER'S OPTION -->
+            <div class="popup__body popup__body-user-options fade-in">
+                <div class="popup__tabs flex hide-for-mobile">
+                    <div class="popup__tab-item active">
+                        Choose Product Type
+                    </div>
+                    <div class="popup__tab-item">
+                        Enter details
+                    </div>
+                    <div class="popup__tab-item">
+                        Results
+                    </div>
+                </div>
+                <!-- Tab content -->
+                <div class="popup__tab-content">
+
+                    <div class="popup__tab-pane popup__tab-pane-choose fade-in">
+                        <p class="popup__tab-pane-quest">Do you want an Air Conditioner that:</p>
+                        <div class="type__list flex">
+                            <div class="type__item" data-type="purification">
+                                <img class="type__logo" src="./images/icons/AirPurification.svg" alt="">
+                                <p class="type__desc flex flex-ai-c flex-jc-c">Heats & Cools including Air
+                                    Purification</p>
+                            </div>
+                            <div class="type__item" data-type="heatAndCooling">
+                                <img class="type__logo" src="./images/icons/HeatAndCool.svg" alt="">
+                                <p class="type__desc flex flex-ai-c flex-jc-c">Heats & Cools</p>
+                            </div>
+                            <div class="type__item" data-type="cooling">
+                                <img class="type__logo" src="./images/icons/Cooling.svg" alt="">
+                                <p class="type__desc flex flex-ai-c flex-jc-c">Cooling only</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup__tab-pane popup__tab-pane-details fade-in">
+                        <div class="question">
+                            <p class="question__content">Does your house have insulation?</p>
+                            <div class="question__button insulation flex flex-jc-sb">
+                                <button class="btn btn--border" data-answer="yes">Yes</button>
+                                <button class="btn btn--border" data-answer="no">No</button>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p class="question__content">Do you have west facing windows?</p>
+                            <div class="question__button window flex flex-jc-sb">
+                                <button class="btn btn--border" data-answer="yes">Yes</button>
+                                <button class="btn btn--border" data-answer="no">No</button>
+                            </div>
+                        </div>
+                        <div class="question flex flex-jc-sb">
+                            <p class="question__content">What is your room size?</p>
+                            <p>Total: <span class="size-number my-total">1</span><span>m²</span></p>
+                        </div>
+                        <div class="size-width">
+                            <p>Width = <span class="size-number my-width">1</span><span>m</span></p>
+                            <div class="size-range flex flex-ai-c">
+                                <p>1m</p>
+                                <input type="range" min="1" max="12" value="1" class="slider" id="width-range">
+                                <p>12m</p>
+                            </div>
+                        </div>
+                        <div class="size-length">
+                            <p>Length = <span class="size-number my-length">1</span><span>m</span></p>
+                            <div class="size-range flex flex-ai-c">
+                                <p>1m</p>
+                                <input type="range" min="1" max="12" value="1" class="slider" id="length-range">
+                                <p>12m</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="popup__tab-pane popup__tab-pane-results fade-in">
+                        <div class="popup__product flex">
+                            <div class="popup__product-content">
+                                <div class="product-info">
+                                    <!-- render JS -->
+                                </div>
+
+                                <div class="button-group">
+                                    <button class="btn btn--active">Where to buy</button>
+                                    <button class="btn btn--border">Request a quote</button>
+                                </div>
+                                <p class="btn-start-over hide-for-mobile">Start over</p>
+                            </div>
+
+                            <div class="popup__product-desc">
+                                <div class="popup__product-tabs flex">
+                                    <div class="popup__product-tab-item active">Benefits</div>
+                                    <div class="popup__product-tab-item">Specification</div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="popup__product-tab-content">
+                                    <div class="popup__product-tab-pane active">
+                                        <ul class="benefit-list">
+                                            <!-- render JS -->
+                                        </ul>
+                                    </div>
+                                    <div class="popup__product-tab-pane">
+                                        <div class="spec__list">
+                                            <div class="spec__item">
+                                                <div class="row">
+                                                    <p>Function</p>
+                                                    <p>CS-Z71VKR</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p>Outdoor Unit</p>
+                                                    <p>CU-Z71VKR</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p>Indoor Unit</p>
+                                                    <p>Cooling, Heating or Air Purification</p>
+                                                </div>
+                                            </div>
+                                            <div class="spec__item">
+                                                <h4 class="spec__item-name">PERFORMANCE</h4>
+                                                <div class="row">
+                                                    <p>Cooling Capacity Rated Conditions (kW)</p>
+                                                    <p>7.1</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p>Cooling Capacity Range - Min ~ Max (kW)</p>
+                                                    <p>1.70 ~ 8.10</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p>AEER / EER</p>
+                                                    <p>3.58 / 3.60</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p>Heating Capacity Rated Conditions (kW)</p>
+                                                    <p>8</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p>Heating Capacity Range - Min ~ Max (kW)</p>
+                                                    <p>1.70 ~ 9.90</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p>ACOP / COP</p>
+                                                    <p>3.77 / 3.79</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p>Star Rating - Cool / Heat</p>
+                                                    <p>2.5 / 3.0</p>
+                                                </div>
+                                            </div>
+                                            <div class="spec__item">
+                                                <h4 class="spec__item-name">SPECIFICATION</h4>
+                                                <div class="row">
+                                                    <p>Power Input - Cool / Heat (kW)</p>
+                                                    <p>1.97 / 2.11</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p>Running Current - Cool / Heat (A)</p>
+                                                    <p>8.60 / 9.20</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p>Electrical Voltage (V)
+                                                    </p>
+                                                    <p>240</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="error">We're Sorry. Your Air Conditioning requirements fall outside the scope of
+                                this application. For a Panasonic Air Conditioner that will better meet your needs,
+                                please visit <a href="#">aircon.panasonic.com.au</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- END POPUP BODY USER'S OPTION -->
+
+            <!-- BEGIN POPUP BODY TERM && LEGAL -->
+            <div class="popup__body popup__body-term fade-in">
+                <div class="term-content">
+                    <h2 class="heading">Terms & Conditions</h2>
+                    <h3 class="term-title">General</h3>
+                    <p class="term-desc">These Terms of Use are applicable to this website ("the
+                        Website")
+                        posted by Panasonic Australia Pty Limited ABN 83 001 592 187 and/or its affiliated
+                        companies
+                        ("Panasonic"): <br><br> Please note that specific pages, facilities or material on the
+                        Website may
+                        have their own conditions. The use of such pages, facilities or material is subject to
+                        those
+                        conditions as well as these Terms of Use. By accessing this Website you agree to those
+                        specific conditions which apply (if any) and these Terms of Use. If there is a conflict
+                        between the specific conditions and these Terms of Use, the specific conditions shall
+                        prevail.</p>
+                    <h3 class="term-title">Use of Website</h3>
+                    <p class="term-desc">You agree that you will not use this Website for any purpose
+                        that is
+                        unlawful or prohibited by these Terms of Use. Without limiting the foregoing, you agree
+                        that
+                        you will not use the Website to spam, transmit or upload any material that contains
+                        viruses
+                        or any other harmful programs or that breach any laws, including intellectual property
+                        or
+                        privacy rights, or otherwise interfere with or disrupt the Website.<br><br>
+                        While the Website, its content and any of the information on it (together "the Content")
+                        is
+                        published in good faith, Panasonic makes no warranty or representation about the Content
+                        including as to it being free of errors or omissions, complete or correct. Panasonic
+                        excludes to the maximum extent permitted by law, any liability which may arise as a
+                        result
+                        of the use of the Content.
+                    </p>
+                    <h3 class="term-title">General</h3>
+                    <p class="term-desc">These Terms of Use are applicable to this website ("the
+                        Website")
+                        posted by Panasonic Australia Pty Limited ABN 83 001 592 187 and/or its affiliated
+                        companies
+                        ("Panasonic"): <br><br> Please note that specific pages, facilities or material on the
+                        Website may
+                        have their own conditions. The use of such pages, facilities or material is subject to
+                        those
+                        conditions as well as these Terms of Use. By accessing this Website you agree to those
+                        specific conditions which apply (if any) and these Terms of Use. If there is a conflict
+                        between the specific conditions and these Terms of Use, the specific conditions shall
+                        prevail.</p>
+                </div>
+                <div class="read-term">
+                    <label class="checkbox-content flex flex-ai-c">
+                        <input type="checkbox" name="" id="check" class="checkbox-term">
+                        I have read and accept the Terms & Conditions
+                    </label>
+                </div>
+            </div>
+            <!-- END POPUP BODY TERM && LEGAL -->
+        </div>
+
+        <div class="button">
+            <button class="btn btn-next btn--disabled">Start now</button>
+        </div>
+
+        <!-- POPUP footer -->
+        <footer class="popup__footer flex flex-jc-c">
+            <p class="legal term-condition">legal</p>
+            <p class="btn-start-over btn-so-mobile">Start over</p>
+        </footer>
+    </div>
+</body>
+
+</html>

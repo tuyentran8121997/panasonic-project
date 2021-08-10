@@ -1,0 +1,618 @@
+{
+  "1": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": true,
+    "west": true,
+    "area": [0, 18],
+    "model": "CS/CU-U25WKR"
+  },
+  "2": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": true,
+    "west": true,
+    "area": [19, 26],
+    "model": "CS/CU-U35WKR"
+  },
+  "3": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": true,
+    "west": true,
+    "area": [27, 38],
+    "model": "CS/CU-U50WKR"
+  },
+  "4": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": true,
+    "west": true,
+    "area": [39, 52],
+    "model": "CS/CU-U71TKR-M"
+  },
+  "5": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": true,
+    "west": true,
+    "area": [53, 61],
+    "model": "CS/CU-U80TKR-M"
+  },
+  "6": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": true,
+    "west": false,
+    "area": [0, 19],
+    "model": "CS/CU-U25WKR"
+  },
+  "7": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": true,
+    "west": false,
+    "area": [20, 27],
+    "model": "CS/CU-U35WKR"
+  },
+  "8": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": true,
+    "west": false,
+    "area": [28, 41],
+    "model": "CS/CU-U50WKR"
+  },
+  "9": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": true,
+    "west": false,
+    "area": [42, 56],
+    "model": "CS/CU-U71TKR-M"
+  },
+  "10": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": true,
+    "west": false,
+    "area": [57, 61],
+    "model": "CS/CU-U80TKR-M"
+  },
+  "11": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": false,
+    "west": true,
+    "area": [0, 14],
+    "model": "CS/CU-U25WKR"
+  },
+  "12": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": false,
+    "west": true,
+    "area": [15, 21],
+    "model": "CS/CU-U35WKR"
+  },
+  "13": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": false,
+    "west": true,
+    "area": [22, 30],
+    "model": "CS/CU-U50WKR"
+  },
+  "14": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": false,
+    "west": true,
+    "area": [31, 42],
+    "model": "CS/CU-U71TKR-M"
+  },
+  "15": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": false,
+    "west": true,
+    "area": [43, 50],
+    "model": "CS/CU-U80TKR-M"
+  },
+  "16": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": false,
+    "west": false,
+    "area": [0, 17],
+    "model": "CS/CU-U25WKR"
+  },
+  "17": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": false,
+    "west": false,
+    "area": [18, 24],
+    "model": "CS/CU-U35WKR"
+  },
+  "18": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": false,
+    "west": false,
+    "area": [25, 35],
+    "model": "CS/CU-U50WKR"
+  },
+  "19": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": false,
+    "west": false,
+    "area": [36, 49],
+    "model": "CS/CU-U71TKR-M"
+  },
+  "20": {
+    "heat_cool": false,
+    "purification": false,
+    "insulation": false,
+    "west": false,
+    "area": [50, 58],
+    "model": "CS/CU-U80TKR-M"
+  },
+
+  "21": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": true,
+    "west": true,
+    "area": [0, 19],
+    "model": "CS/CU-Z25VKR"
+  },
+  "22": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": true,
+    "west": true,
+    "area": [20, 26],
+    "model": "CS/CU-Z35VKR"
+  },
+  "23": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": true,
+    "west": true,
+    "area": [27, 33],
+    "model": "CS/CU-Z42VKR"
+  },
+  "24": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": true,
+    "west": true,
+    "area": [34, 38],
+    "model": "CS/CU-Z50VKR"
+  },
+  "25": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": true,
+    "west": true,
+    "area": [39, 45],
+    "model": "CS/CU-Z60VKR"
+  },
+  "26": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": true,
+    "west": true,
+    "area": [46, 52],
+    "model": "CS/CU-Z71VKR"
+  },
+  "27": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": true,
+    "west": true,
+    "area": [53, 61],
+    "model": "CS/CU-Z80VKR"
+  },
+
+  "28": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": true,
+    "west": false,
+    "area": [0, 20],
+    "model": "CS/CU-Z25VKR"
+  },
+  "29": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": true,
+    "west": false,
+    "area": [21, 28],
+    "model": "CS/CU-Z35VKR"
+  },
+  "30": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": true,
+    "west": false,
+    "area": [29, 36],
+    "model": "CS/CU-Z42VKR"
+  },
+  "31": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": true,
+    "west": false,
+    "area": [37, 41],
+    "model": "CS/CU-Z50VKR"
+  },
+  "32": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": true,
+    "west": false,
+    "area": [42, 48],
+    "model": "CS/CU-Z60VKR"
+  },
+  "33": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": true,
+    "west": false,
+    "area": [49, 56],
+    "model": "CS/CU-Z71VKR"
+  },
+  "34": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": true,
+    "west": false,
+    "area": [57, 66],
+    "model": "CS/CU-Z80VKR"
+  },
+
+  "35": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": false,
+    "west": true,
+    "area": [0, 14],
+    "model": "CS/CU-Z25VKR"
+  },
+  "36": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": false,
+    "west": true,
+    "area": [15, 21],
+    "model": "CS/CU-Z35VKR"
+  },
+  "37": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": false,
+    "west": true,
+    "area": [22, 26],
+    "model": "CS/CU-Z42VKR"
+  },
+  "38": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": false,
+    "west": true,
+    "area": [27, 30],
+    "model": "CS/CU-Z50VKR"
+  },
+  "39": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": false,
+    "west": true,
+    "area": [31, 36],
+    "model": "CS/CU-Z60VKR"
+  },
+  "40": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": false,
+    "west": true,
+    "area": [37, 42],
+    "model": "CS/CU-Z71VKR"
+  },
+  "41": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": false,
+    "west": true,
+    "area": [43, 50],
+    "model": "CS/CU-Z80VKR"
+  },
+
+  "42": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": false,
+    "west": false,
+    "area": [0, 17],
+    "model": "CS/CU-Z25VKR"
+  },
+  "43": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": false,
+    "west": false,
+    "area": [18, 23],
+    "model": "CS/CU-Z35VKR"
+  },
+  "44": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": false,
+    "west": false,
+    "area": [24, 30],
+    "model": "CS/CU-Z42VKR"
+  },
+  "45": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": false,
+    "west": false,
+    "area": [31, 35],
+    "model": "CS/CU-Z50VKR"
+  },
+  "46": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": false,
+    "west": false,
+    "area": [36, 42],
+    "model": "CS/CU-Z60VKR"
+  },
+  "47": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": false,
+    "west": false,
+    "area": [43, 49],
+    "model": "CS/CU-Z71VKR"
+  },
+  "48": {
+    "heat_cool": true,
+    "purification": true,
+    "insulation": false,
+    "west": false,
+    "area": [50, 58],
+    "model": "CS/CU-Z80VKR"
+  },
+
+  "49": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": true,
+    "west": true,
+    "area": [0, 19],
+    "model": "CS/CU-RZ25WKR"
+  },
+  "50": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": true,
+    "west": true,
+    "area": [20, 26],
+    "model": "CS/CU-RZ35WKR"
+  },
+  "51": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": true,
+    "west": true,
+    "area": [27, 33],
+    "model": "CS/CU-RZ42WKR"
+  },
+  "52": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": true,
+    "west": true,
+    "area": [34, 38],
+    "model": "CS/CU-RZ50WKR"
+  },
+  "53": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": true,
+    "west": true,
+    "area": [39, 45],
+    "model": "CS/CU-RZ60VKR-M"
+  },
+  "54": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": true,
+    "west": true,
+    "area": [46, 52],
+    "model": "CS/CU-RZ71VKR-M"
+  },
+  "55": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": true,
+    "west": true,
+    "area": [53, 61],
+    "model": "CS/CU-RZ80VKR-M"
+  },
+
+  "56": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": true,
+    "west": false,
+    "area": [0, 20],
+    "model": "CS/CU-RZ25WKR"
+  },
+  "57": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": true,
+    "west": false,
+    "area": [21, 28],
+    "model": "CS/CU-RZ35WKR"
+  },
+  "58": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": true,
+    "west": false,
+    "area": [29, 36],
+    "model": "CS/CU-RZ42WKR"
+  },
+  "59": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": true,
+    "west": false,
+    "area": [37, 41],
+    "model": "CS/CU-RZ50WKR"
+  },
+  "60": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": true,
+    "west": false,
+    "area": [42, 48],
+    "model": "CS/CU-RZ60VKR-M"
+  },
+  "61": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": true,
+    "west": false,
+    "area": [49, 56],
+    "model": "CS/CU-RZ71VKR-M"
+  },
+  "62": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": true,
+    "west": false,
+    "area": [57, 66],
+    "model": "CS/CU-RZ80VKR-M"
+  },
+
+  "63": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": false,
+    "west": true,
+    "area": [0, 14],
+    "model": "CS/CU-RZ25WKR"
+  },
+  "64": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": false,
+    "west": true,
+    "area": [15, 21],
+    "model": "CS/CU-RZ35WKR"
+  },
+  "65": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": false,
+    "west": true,
+    "area": [22, 26],
+    "model": "CS/CU-RZ42WKR"
+  },
+  "66": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": false,
+    "west": true,
+    "area": [27, 30],
+    "model": "CS/CU-RZ50WKR"
+  },
+  "67": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": false,
+    "west": true,
+    "area": [31, 36],
+    "model": "CS/CU-RZ60VKR-M"
+  },
+  "68": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": false,
+    "west": true,
+    "area": [37, 42],
+    "model": "CS/CU-RZ71VKR-M"
+  },
+  "69": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": false,
+    "west": true,
+    "area": [43, 50],
+    "model": "CS/CU-RZ80VKR-M"
+  },
+
+  "70": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": false,
+    "west": false,
+    "area": [0, 17],
+    "model": "CS/CU-RZ25WKR"
+  },
+  "71": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": false,
+    "west": false,
+    "area": [18, 23],
+    "model": "CS/CU-RZ35WKR"
+  },
+  "72": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": false,
+    "west": false,
+    "area": [24, 30],
+    "model": "CS/CU-RZ42WKR"
+  },
+  "73": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": false,
+    "west": false,
+    "area": [31, 35],
+    "model": "CS/CU-RZ50WKR"
+  },
+  "74": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": false,
+    "west": false,
+    "area": [36, 42],
+    "model": "CS/CU-RZ60VKR-M"
+  },
+  "75": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": false,
+    "west": false,
+    "area": [43, 49],
+    "model": "CS/CU-RZ71VKR-M"
+  },
+  "76": {
+    "heat_cool": true,
+    "purification": false,
+    "insulation": false,
+    "west": false,
+    "area": [50, 58],
+    "model": "CS/CU-RZ80VKR-M"
+  }
+}

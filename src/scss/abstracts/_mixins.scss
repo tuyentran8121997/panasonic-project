@@ -1,0 +1,80 @@
+/**
+ * 1. Mixin for Font
+ * 2. Mixin for Positions
+ * 3. Mixin for Breakpoints
+ *
+ */
+
+/*=============================================
+=            1. Mixin for Font            =
+=============================================*/
+@mixin setFont($fontFamily) {
+  @if $fontFamily == neolg {
+    font-family: "Neo Sans Std Light";
+  }
+  @if $fontFamily == neorg {
+    font-family: "Neo Sans Std Regular";
+  }
+  @if $fontFamily == neomd {
+    font-family: "Neo Sans Std Medium";
+  }
+  @if $fontFamily == neobd {
+    font-family: "Neo Sans Std Bold";
+  }
+}
+
+@mixin setFontGlobal {
+  font-size: $font-med;
+  font-weight: 400;
+  color: $textColor;
+  line-height: 1.2;
+}
+
+/*=============================================
+=            2. Mixin for Positions          =
+=============================================*/
+
+@mixin setPosition(
+  $position,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: 1;
+}
+
+/*=============================================
+=            3. Mixin for Breakpoints          =
+=============================================*/
+
+// 740px, 1024px, 1400px
+$breakpoints-up: (
+  "medium": "46.25em",
+  "large": "64em",
+  "xlarge": "87.5em",
+);
+
+// 739px, 1023px, 1399px
+$breakpoints-down: (
+  "small": "46.1875em",
+  "medium": "63.9375em",
+  "large": "87.4375em",
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
