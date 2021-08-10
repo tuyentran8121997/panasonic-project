@@ -43,9 +43,6 @@ body {
 
 .popup__body {
   display: none;
-  @include breakpoint-down(small) {
-    margin-top: 3.2rem;
-  }
   &.active {
     display: block;
   }
@@ -194,6 +191,7 @@ body {
   margin-bottom: 4rem;
   @include breakpoint-down(small) {
     margin-bottom: 5.4rem;
+    margin-top: 3.2rem;
   }
   .type__list {
     margin-top: 3.2rem;
@@ -283,6 +281,7 @@ body {
   @include breakpoint-down(small) {
     padding: 0 0.8rem;
     margin-bottom: 5.4rem;
+    margin-top: 3.2rem;
   }
 }
 
@@ -375,6 +374,11 @@ body {
 }
 
 /*----------  4.3. Popup tab pane results  ----------*/
+.popup__tab-pane-results {
+  @include breakpoint-down(small) {
+    margin-top: 2.4rem;
+  }
+}
 .error {
   display: none;
   max-width: 40rem;
@@ -404,6 +408,9 @@ body {
   &-name {
     margin-bottom: 1.6rem;
     line-height: 1.5;
+    @include breakpoint-down(small) {
+      margin-bottom: 0.8rem;
+    }
     b {
       @include setFont(neobd);
       line-height: 1.5;
@@ -413,8 +420,13 @@ body {
     color: rgba(0, 58, 159, 0.5);
   }
   &-image {
+    max-width: 26.9rem;
     margin: 0.8rem auto 2.4rem;
+    @include breakpoint-down(small) {
+      margin: 0.4rem auto 1.6rem;
+    }
   }
+
   .button-group {
     button {
       min-width: 20.2rem;
@@ -432,6 +444,7 @@ body {
 
   &-desc {
     position: relative;
+    flex: 1;
     height: 40rem;
     background: $whiteColor;
     border: 0.5px solid #e1e1e1;
@@ -572,6 +585,9 @@ body {
     cursor: pointer;
     color: $mainColor;
     text-align: left;
+    @include breakpoint-down(small) {
+      margin-top: 1.6rem;
+    }
   }
 }
 

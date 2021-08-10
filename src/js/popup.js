@@ -289,10 +289,10 @@ function getMatrix() {
     })
     .then(function (data) {
       if (data.modelName && data.modelDetail) {
-        document.querySelector(".error").style.display = "none";
         document.querySelector(".popup__product-content").style.display =
           "block";
         document.querySelector(".popup__product-desc").style.display = "block";
+        document.querySelector(".error").style.display = "none";
         let productInfo = "";
         let productBenefit = "";
         const lengthData = data.modelDetail.benefit.length;
